@@ -14,3 +14,9 @@ export async function categoryProduct({ id }) {
     (res) => res.json()
   );
 }
+
+export async function getCategories() {
+  return await fetch("https://dummyjson.com/products/categories").then((res) =>
+    res.json()
+  );
+}
