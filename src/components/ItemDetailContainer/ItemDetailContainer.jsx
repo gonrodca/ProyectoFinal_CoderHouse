@@ -33,7 +33,7 @@ export const ItemDetailContainer = ({ product }) => {
   const handleDecrement = () => {
     if (count > 0) {
       setCount(count - 1);
-      removeItem(product);
+      //  removeItem(product);
     }
   };
 
