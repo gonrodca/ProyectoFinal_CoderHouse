@@ -9,6 +9,9 @@ export const CartProvider = ({ children }) => {
   const addItem = (product) => {
     setCartState(cartState + 1);
   };
+  const removeItem = (product) => {
+    setCartState(cartState + 1);
+  };
   return (
     <CartContext.Provider value={{ cartState, addItem, removeItem }}>
       {children}
