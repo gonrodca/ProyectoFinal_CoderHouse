@@ -18,7 +18,7 @@ import { CartContext } from "../../context/CartContext";
 export const ItemDetailContainer = ({ product }) => {
   const [showCount, setShowCount] = useState(false);
   const [count, setCount] = useState(0);
-  // const { addItem, removeItem } = useContext(CartContext);
+  const { addItem, removeItem } = useContext(CartContext);
   const handleShowCount = () => {
     setShowCount(!showCount);
   };
@@ -26,14 +26,14 @@ export const ItemDetailContainer = ({ product }) => {
   const handleIncrement = () => {
     if (product.stock >= count) {
       setCount(count + 1);
-      //  addItem(product);
+      addItem(product, count + 1);
     }
   };
 
   const handleDecrement = () => {
     if (count > 0) {
       setCount(count - 1);
-      //  removeItem(product);
+      removeItem(product);
     }
   };
 
