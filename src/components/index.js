@@ -3,3 +3,4 @@ export * from "./Home";
 export * from "./ItemListContainer";
 export * from "./NavBar";
 export * from "./ItemDetailContainer";
+export * from "./CartDetail";
